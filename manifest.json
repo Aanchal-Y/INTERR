@@ -1,12 +1,5 @@
 {
-  "android_package_name": "org.jitsi.meet",
-  "prefer_related_applications": true,
-  "related_applications": [
-    {
-      "id": "org.jitsi.meet",
-      "platform": "chromeos_play"
-    }
-  ],
+  "prefer_related_applications": false,
   "short_name": "Interr",
   "name": "Interr",
   "icons": [
