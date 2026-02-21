@@ -1,7 +1,7 @@
 *.swp
 .*.tmp
 deploy-local.sh
-all.css
+# all.css is now tracked so it deploys to Vercel
 *css.map
 .remote-sync.json
 .sync-config.cson
@@ -117,3 +117,4 @@ react-native-sdk/sounds
 tests/.env
 test-results
 
+.vercel
