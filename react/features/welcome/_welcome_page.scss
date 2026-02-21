@@ -1,0 +1,14 @@
+/* hide watermark/logo elements forcefully */
+.watermark,
+.watermark.leftwatermark,
+.welcome-watermark,
+.header .header-image,
+.header .header-logo,
+img[src*="jitsi"],
+img[src*="jitsilogo"],
+.footer-badges,
+.welcome-footer,
+.powered-by {
+	display: none !important;
+	background-image: none !important;
+}
