@@ -1,14 +1,17 @@
 #videoconference_page {
-    min-height: 100%;
+    min-height: 100dvh;  // use dynamic viewport height — prevents shift on mobile with address bar
     position: relative;
     transform: translate3d(0, 0, 0);
     width: 100%;
+    // Respect device safe areas (notch/status bar on mobile)
+    padding-top: env(safe-area-inset-top, 0px);
+    box-sizing: border-box;
 }
 
 #layout_wrapper {
     @include ltr;
     display: flex;
-    height: 100%;
+    height: 100dvh;  // use dynamic viewport height for the main wrapper
 }
 
 #videospace {
@@ -243,10 +246,12 @@
 }
 
 .avatar-container {
-    @include maxSize(60px);
     @include absoluteAligning();
     display: flex;
     justify-content: center;
+    // Removed maxSize(60px) cap — let the tile size determine avatar size
+    max-width: min(60px, 80%);
+    max-height: min(60px, 80%);
     height: 50%;
     width: auto;
     overflow: hidden;

@@ -6,11 +6,14 @@
 .whiteboard-container,
 .stage-filmstrip {
     /**
-     * Let the avatar grow with the tile.
+     * Let the avatar grow with the tile — no max-size cap in tile/stage view.
      */
     .avatar-container {
         max-height: initial;
         max-width: initial;
+        height: 60%;  // larger presence in tile
+        min-height: 40px;
+        min-width: 40px;
     }
 
     /**
